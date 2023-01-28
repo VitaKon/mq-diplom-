@@ -207,7 +207,7 @@ li {
 }
 
 .trend-object {
-  width: 24.7%;
+  width: calc(25% - 7px);
   min-height: 320px;
   position: relative;
   margin-right: 7px;
@@ -277,7 +277,7 @@ li {
   position: relative;
   padding: 21px 30px;
   padding-bottom: 30px;
-  width: 365px;
+  /* width: 365px; */
   border: 3px solid #b59f5b;
   border: 3px solid rgba(181, 159, 91, 0.6);
   z-index: 3;
@@ -1102,7 +1102,7 @@ input[type="radio"]:not(:checked) + label:after {
   }
 
   .trend-object {
-    width: 49.6%;
+    width: calc(50% - 3px);
     margin: 0;
     margin-bottom: 3px;
   }
@@ -1245,13 +1245,10 @@ input[type="radio"]:not(:checked) + label:after {
   }
 }
 
-/* @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-  .trend-menu {
-    flex-wrap: nowrap;
-  }
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
 
   .trend-object {
-    width: 25%;
+    width: calc(25% - 3px);
     min-height: 320px;
     position: relative;
     margin-right: 3px;
@@ -1260,7 +1257,7 @@ input[type="radio"]:not(:checked) + label:after {
   .trend-object:last-child {
     margin-right: 0px;
   }
-} */
+}
 
 @media (max-width: 640px) {
   .header {
@@ -1448,13 +1445,13 @@ input[type="radio"]:not(:checked) + label:after {
   }
 }
 
-/* @media (max-width: 640px) and (min-width: 1px) and (orientation: landscape) {
+@media (max-width: 640px) and (min-width: 1px) and (orientation: landscape) {
   .trend-menu {
     flex-wrap: wrap;
   }
 
   .trend-object {
-    width: 50%;
+    width: calc(50% - 3px);
     min-height: 320px;
     position: relative;
     margin-right: 3px;
@@ -1463,4 +1460,4 @@ input[type="radio"]:not(:checked) + label:after {
   .trend-object:last-child {
     margin-right: 0px;
   }
-} */
+}
